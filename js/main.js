@@ -35,15 +35,14 @@ function transformRight(event) {
         activeLi = Number(activeLi) + 260;
 
         /*오른쪽이동 했으니 왼쪽버튼활성화*/
-        slideLeft.style.color = '#2f3059';
+        slideLeft.style.color = 'white';
         slideLeft.classList.add('slide-left-hover');
         slideLeft.addEventListener('click', transformLeft);
 
         /*카트 위치 왼쪽 맨끝일떄  오른쪽버튼 비활성*/
         if(Number(activeLi)===0){
-            slideRight.style.color = '#cfd8dc';
+            slideRight.style.color = 'cfd8dcdc';
             slideRight.classList.remove('slide-right-hover');
-            /* 오른쪽 버튼 설정*/
             slideRight.removeEventListener('click', transformRight);
         }         
     }
@@ -75,14 +74,14 @@ function transformLeft(event) {
 
         /* 전체카드(ul)길이가  ul 공간보다 없을때  -> 왼쪽 버튼비활성*/
         if (classList.clientWidth > (liList.length * 260 + Number(activeLi))) {
-            slideLeft.style.color = '#cfd8dc';
+            slideLeft.style.color = 'cfd8dcdc';
             slideLeft.classList.remove('slide-left-hover');
             /* 오른쪽 버튼 설정*/
             slideLeft.removeEventListener('click', transformLeft);
         }
 
         /*왼쪽으로 밀어준뒤 -> 오른쪽 버튼 활성*/
-        slideRight.style.color = '#2f3059';
+        slideRight.style.color = 'white';
         slideRight.classList.add('slide-right-hover');
         slideRight.addEventListener('click', transformRight);
     }

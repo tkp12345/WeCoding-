@@ -22,7 +22,7 @@ ul li class-img:hover {
 
 body {
   margin: 0 auto;
-  color: black;
+  background: linear-gradient(to right, #11998e, #38ef7d);
   font-family: "Spoqa Han Sans Neo", "Sans-serif";
 }
 
@@ -32,14 +32,15 @@ body {
   margin: 0 auto;
   padding: 0 3rem;
   overflow: hidden;
+  margin-bottom: 18px;
 
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 header {
   width: 100%;
   height: 70px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.959);
   position: fixed;
   top: 0;
   left: 0;
@@ -58,10 +59,17 @@ header {
 }
 
 .head-container .head-brand {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 2.2rem;
-  color:rgb(253, 210, 69);
-  text-shadow: -2px 0 rgb(0, 0, 0), 0 2px rgb(0, 0, 0), 2px 0 rgb(0, 0, 0), 0 -2px rgb(0, 0, 0);
+  background: -webkit-linear-gradient(rgb(255, 255, 27), rgba(248, 244, 0, 0.938));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* //text-shadow: -1px 0 rgba(0, 0, 0, 0.158), 0 1px rgba(0, 0, 0, 0.158), 1px 0 rgba(0, 0, 0, 0.158), 0 -1px rgba(0, 0, 0, 0.158);   */
+}
+.wecoing-logo{
+  width: 200px;
+  height: 70px;
+  object-fit: cover;
 }
 
 .head-container .head-menu {
@@ -69,9 +77,14 @@ header {
   font-size: 0.8rem;
 }
 
+.head-icon__login{
+  margin-left: 15px;
+  font-size: 20px;
+
+}
+ 
 section {
   width: 100%;
-  background: linear-gradient(to right, #11998e, #38ef7d);
   position: relative;
   
 }
@@ -123,7 +136,8 @@ section {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  border: 3px solid rgb(73, 43, 245);
+  margin:15px 0px;
+  /* border: 3px solid rgb(73, 43, 245); */
 }
 
 .tool {
@@ -133,8 +147,10 @@ section {
   margin: 1rem;
   width: 25%;
   display: flex;
+  justify-content: center;
   box-shadow: 10px 10px 10px -6px rgb(124, 124, 124);
   transform: 2s;
+  transition: 0.4s;
   border: 1px solid rgb(8, 255, 70);
 }
 
@@ -144,28 +160,38 @@ section {
 
 .tool-icon {
   font-size: 2rem;
-  margin: 0 8px;
+  margin: 10px 20px 8px -10px;
 }
 
 .tool-title {
   display: flex;
   flex-direction: column;
   align-content: center;
+  margin-top:5px;
 }
 
 .tool-title--maintitle {
+  font-size: 1.0rem;
   font-weight: bold;
   margin-bottom: 0.2rem;
 }
 
 .tool-title--subtitle {
+  margin-top:3px;
   font-size: 0.9rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 0.2rem;
 }
 
+.beckend-style{
+  color:rgb(124, 124, 124)
+}
+
+.frontend-style{
+  color:rgb(248, 170, 25)
+}
 .tool-style {
-  color: blueviolet;
+  color: rgba(111, 25, 145, 0.753);
 }
 
 .material-container {
@@ -182,18 +208,23 @@ section {
 .marterial-title-container--title {
   font-size: 1.4rem;
   font-weight: bold;
+  margin-top: 10px;
+  color:rgba(255, 255, 255, 0.829);
+  
+
 }
 
 .slide-left {
   font-size: 2.5rem;
+  margin-right: 10px;
   cursor: pointer;
-  color: rgb(63, 63, 63);
+  color: rgb(255, 255, 255);
 }
 
 .slide-right {
   font-size: 2.5rem;
   cursor: pointer;
-  color: #cfd8dc;
+  color: #cfd8dcdc;
 }
 
 .slide-left-hover:hover {
