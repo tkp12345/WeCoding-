@@ -21,14 +21,19 @@ backToTop.addEventListener("click", moveBackToTop);
 
 
 /*=============== card scroll ==================*/
+
 function transformRight(event) {
     const slideRight = event.target;
+    /*<i class="fas fa-angle-right slide-right"></i>*/
     const slideLeft = slideRight.previousElementSibling;
 
     /*ul*/
     const classList = slideRight.parentElement.parentElement.nextElementSibling;
+    /*<ul class=​"class-list" data-position=​"0">*/
     let activeLi = classList.getAttribute('data-position');
+    /*0*/
     const liList = classList.getElementsByTagName('li');
+    /*HTMLCollection(6) [li.class-card, ... li.class-card]*/
 
     if (Number(activeLi) < 0) {
         /*오른쪽 이동*/
@@ -39,7 +44,7 @@ function transformRight(event) {
         slideLeft.classList.add('slide-left-hover');
         slideLeft.addEventListener('click', transformLeft);
 
-        /*카트 위치 왼쪽 맨끝일떄  오른쪽버튼 비활성*/
+        /*카드 위치 왼쪽 맨끝일떄  오른쪽버튼 비활성*/
         if(Number(activeLi)===0){
             slideRight.style.color = 'cfd8dcdc';
             slideRight.classList.remove('slide-right-hover');
@@ -58,7 +63,7 @@ function transformRight(event) {
 
 
 
-function transformLeft(event) {
+function transformLeft(event) { 
     const slideLeft = event.target;
     const slideRight = slideLeft.nextElementSibling;
 
@@ -76,7 +81,6 @@ function transformLeft(event) {
         if (classList.clientWidth > (liList.length * 260 + Number(activeLi))) {
             slideLeft.style.color = 'cfd8dcdc';
             slideLeft.classList.remove('slide-left-hover');
-            /* 오른쪽 버튼 설정*/
             slideLeft.removeEventListener('click', transformLeft);
         }
 

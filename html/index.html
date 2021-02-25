@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +11,8 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta propery="og:type" content="website" />
-
     <link rel="icon" href="img/fun-coding.ico" />
     <link rel="apple-touch-icon" href="img/fun-coding.ico" />
-
-
     <!--웹브라우저 설정초기화-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <!--홈페이지 아이콘 설정-->
@@ -24,55 +20,65 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!--폰트-->
     <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/carousel.css" />
+    <!--jquery [header, footer 분할]-->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#header").load("header.html");  // 원하는 파일 경로를 삽입하면 된다
+            // $("#footers").load("common/footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+        });
+    </script>
+
 </head>
 
 <body>
     <header>
-        <div class="inner">
-            <div class="head-container">
-                <div class="head-menu">
-                    <i class="fas fa-bars fa-2x"></i>
-                </div>
-                <div class="head-brand">
-                    <img src="img/wecoing-logo.png" class="wecoing-logo"/>
-                </div>
-                <div class="head-icon">
-                    <i class="fas fa-shopping-cart fa-lg"></i>
-                    <span class="head-icon__login">로그인</span> 
-                 </div>
-            </div>
-        </div>
-
+        <div id="header"></div>
     </header>
-    <section class="main">
-        <div class="main-container">
-            <div class="inner">
-                <div class="title-container">
-                    <div class="title">위코딩은 "함께" 의 의미를 중요시합니다</div>
-                    <div class="message">함께 했을때 얻어지는 에너지를 중요하게여기고 있습니다</div>
+    <Carousel>
+        <div class="slider">
+
+            <!-- <section class="main "> -->
+            <div class="slide showing">
+                <div class="carousel-fist img">
+                    <div class="main-container">
+                        <div class="title-container">
+                            <div class="title">위코딩은 "함께" 의 의미를 중요시합니다</div>
+                            <div class="message">함께 했을때 얻어지는 에너지를 중요하게여기고 있습니다</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="slide">
+                <div class="carousel-second img"></div>
+            </div>
+            <div class="slide">
+                <div class="carousel-third img"></div>
+            </div>
+            <button type="button" class="left btns"><</button>
+            <button type="button" class="right btns">></button>
         </div>
-    </section>
+    </Carousel>
     <section>
         <div class="inner">
             <div class="tool-container">
-                <div class="tool">
+                <div class="tool" onclick="location.href='/html/master.html';">
                     <i class="fas fa-server tool-icon beckend-style"></i>
                     <div class="tool-title">
-                        <div class="tool-title--maintitle"> 백앤드</div>
+                        <div class="tool-title--maintitle">백앤드</div>
                         <div class="tool-title--subtitle">모든회원</div>
                     </div>
                 </div>
-                <div class="tool">
+                <div class="tool" onclick="location.href='/html/master.html';">
                     <i class="far fa-window-restore tool-icon frontend-style"></i>
                     <div class="tool-title">
                         <div class="tool-title--maintitle"> 프론트앤드</div>
                         <div class="tool-title--subtitle">모든회원</div>
                     </div>
                 </div>
-                <div class="tool">
+                <div class="tool" onclick="location.href='/html/master.html';">
                     <i class="fas fa-users-class tool-icon tool-style"></i>
                     <div class="tool-title">
                         <div class="tool-title--maintitle"> 화상강의</div>
@@ -83,24 +89,24 @@
         </div>
         </div>
     </section>
+
     <section>
         <div class="inner">
             <div class="material-container ">
 
                 <div class="marterial-title-container">
                     <div class="marterial-title-container--title">
-                        위코딩이란? 💁  
+                        위코딩이란? 💁
                     </div>
                     <div class="arrow-container">
                         <i class="fas fa-angle-left slide-left"></i>
                         <i class="fas fa-angle-right slide-right"></i>
-                        
                     </div>
                 </div>
 
                 <ul class="class-list" data-position="0">
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -122,7 +128,7 @@
                     </li>
 
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -144,7 +150,7 @@
                     </li>
 
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -166,7 +172,7 @@
                     </li>
 
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -188,7 +194,7 @@
                     </li>
 
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -210,7 +216,7 @@
                     </li>
 
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -245,13 +251,13 @@
                     <div class="arrow-container">
                         <i class="fas fa-angle-left slide-left"></i>
                         <i class="fas fa-angle-right slide-right"></i>
-                        
+
                     </div>
                 </div>
 
                 <ul class="class-list" data-position="0">
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -273,7 +279,7 @@
                     </li>
 
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -295,7 +301,7 @@
                     </li>
 
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -317,7 +323,7 @@
                     </li>
 
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -339,7 +345,7 @@
                     </li>
 
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -361,7 +367,7 @@
                     </li>
 
                     <li class="class-card">
-                        <img src="img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
+                        <img src="/img/wecoding_content.png" alt="코딩스터디 플랫폼 위코딩" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
                                 <div class="class-type">
@@ -386,7 +392,7 @@
         </div>
     </section>
     <a id="backtotop" class="show"></a>
-    <script src="js/main.js" />
+    <script src="/js/main.js"></script>
+    <script src="/js/carousel.js"></script>
 </body>
-
 </html>

@@ -33,7 +33,6 @@ body {
   padding: 0 3rem;
   overflow: hidden;
   margin-bottom: 18px;
-
   /* border: 2px solid red; */
 }
 
@@ -46,8 +45,6 @@ header {
   left: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px 0 hsl(0deg 0% 81% / 50%);
-  
-  
 }
 
 .head-container {
@@ -61,12 +58,9 @@ header {
 .head-container .head-brand {
   font-weight: 900;
   font-size: 2.2rem;
-  background: -webkit-linear-gradient(rgb(255, 255, 27), rgba(248, 244, 0, 0.938));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* //text-shadow: -1px 0 rgba(0, 0, 0, 0.158), 0 1px rgba(0, 0, 0, 0.158), 1px 0 rgba(0, 0, 0, 0.158), 0 -1px rgba(0, 0, 0, 0.158);   */
-}
-.wecoing-logo{
+  cursor: pointer;
+ }
+.wecoing-logo {
   width: 200px;
   height: 70px;
   object-fit: cover;
@@ -77,39 +71,57 @@ header {
   font-size: 0.8rem;
 }
 
-.head-icon__login{
+.head-icon__login {
   margin-left: 15px;
   font-size: 20px;
-
 }
- 
+
+.carousel {
+}
+
 section {
   width: 100%;
+  height: 100%;
   position: relative;
-  
+  /* position: relative; */
+  border: solid 2px red;
 }
 
-.main {
-  height: 360px;
+.carousel-fist {
   background-image: url("https://www.northampton.ac.uk/wp-content/uploads/2019/02/Code-Club-at-Northampton-International-Academy.jpg");
+
+  /* margin-top: 60px; */
+  /* border: solid 2px red; */
+}
+
+.carousel-second {
+  background-image: url("/img/wecoding_carousel1.png");
+  /* object-fit: cover !important; */
+}
+
+.carousel-third {
+  background-image: url("/img/wecoding_carousel4.png");
+}
+
+.img {
+  width: 100%;
+  height: 360px;
   z-index: 1;
   background-size: cover;
   background-position: center 50%;
-  
-  margin-top: 60px;
 }
 
 .main-container {
   width: 100%;
   height: 100%;
-  background-color: rgb(29, 30, 126);
-  opacity: 0.6;
+  background-color: rgba(22, 23, 107, 0.637);
+  opacity: 0.9;
   z-index: 2;
 }
 
 .title-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 200px;
+  padding-left: 50px;
 }
 
 .title {
@@ -136,7 +148,7 @@ section {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  margin:15px 0px;
+  margin: 15px 0px;
   /* border: 3px solid rgb(73, 43, 245); */
 }
 
@@ -152,6 +164,7 @@ section {
   transform: 2s;
   transition: 0.4s;
   border: 1px solid rgb(8, 255, 70);
+  cursor: pointer;
 }
 
 .tool:hover {
@@ -167,28 +180,28 @@ section {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-top:5px;
+  margin-top: 5px;
 }
 
 .tool-title--maintitle {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0.2rem;
 }
 
 .tool-title--subtitle {
-  margin-top:3px;
+  margin-top: 3px;
   font-size: 0.9rem;
   font-weight: 500;
   margin-bottom: 0.2rem;
 }
 
-.beckend-style{
-  color:rgb(124, 124, 124)
+.beckend-style {
+  color: rgb(124, 124, 124);
 }
 
-.frontend-style{
-  color:rgb(248, 170, 25)
+.frontend-style {
+  color: rgb(248, 170, 25);
 }
 .tool-style {
   color: rgba(111, 25, 145, 0.753);
@@ -204,14 +217,12 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-
+ 
 .marterial-title-container--title {
   font-size: 1.4rem;
   font-weight: bold;
   margin-top: 10px;
-  color:rgba(255, 255, 255, 0.829);
-  
-
+  color: rgba(255, 255, 255, 0.829);
 }
 
 .slide-left {
@@ -353,7 +364,7 @@ section {
   visibility: visible;
   background-color: rgb(48, 48, 48);
 }
-
+/*1200 일때 */
 @media only screen and (min-width: 1200px) {
   .inner {
     max-width: 1200px;
