@@ -92,10 +92,11 @@ sidebar{
   top: 70px;
   width: 60px;
   height: 100%;
-  background: red;
+  background: rgba(62, 218, 96, 0.945);
   transition: 0.5s;
   overflow: hidden;
   z-index:999999;
+  border-radius: 0px 10px 10px 0px;
   /* left:-200px; */
 }
 
@@ -117,10 +118,11 @@ sidebar{
   position: relative;
   width: 100%;
   list-style: none;
+  border-bottom: 1px solid rgba(88, 88, 88, 0.767);
 }
 
 .navigation ul li:hover {
-  background-color: aqua;
+  background-color: rgba(215, 252, 157, 0.788);
 }
 .navigation ul li a {
   position: relative;
@@ -131,17 +133,19 @@ sidebar{
 
 .navigation ul li a .icon {
   position: relative;
+  margin-left: 15px;
   display: block;
-
   height: 60px;
   min-width: 60px;
-
   line-height: 60px;
   text-align: center;
+  font-size: 20px;
+  color:rgb(82, 82, 82);
 }
 
+
 .navigation ul li a .icon .fa {
-  font-size: 24px;
+
 }
 
 .navigation ul li a .title {
@@ -151,8 +155,10 @@ sidebar{
   padding: 0 10px;
   height: 60px;
   line-height: 60px;
+  font-size: 20px;
   text-align: start;
   white-space: nowrap;
+  color: #ffffff;
 }
 
 
@@ -162,6 +168,8 @@ sidebar{
 
 .toggle.active:before{
   content:'\f00d';
+ 
+  /* font-size: fa-2x; */
    
 }
 /*************/
@@ -173,7 +181,7 @@ section {
   height: 100%;
   position: relative;
   /* position: relative; */
-  border: solid 2px red;
+ 
 }
 
 .carousel-fist {
@@ -351,6 +359,7 @@ section {
 
 .class-card {
   width: 240px;
+  height: 100%;
   list-style: none;
   margin: 0 10px;
   box-shadow: 10px 10px 10px -6px rgb(124, 124, 124);
@@ -379,6 +388,7 @@ section {
 }
 
 .class-skill {
+  margin-bottom: 2px;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -387,6 +397,7 @@ section {
 .class-type {
   font-size: 0.7rem;
   color: #949393;
+  padding: 0.2rem;
 }
 
 .class-format {
@@ -414,6 +425,7 @@ section {
 }
 
 .class-detail {
+  text-overflow: ellipsis;
   line-height: 1rem;
   font-size: 0.9rem;
 }
