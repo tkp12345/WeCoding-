@@ -27,7 +27,8 @@ function next_move(){
         const nextCarousel = currentCarousel.nextElementSibling;
         currentCarousel.classList.remove(showing_class);
 
-        if(nextCarousel){
+        /*마지막 슬라이드의 다음태그는 .left btns 태그임으로  */
+        if(nextCarousel !=leftButton){
             nextCarousel.classList.add(showing_class);
         }else{
             firstCrousel.classList.add(showing_class);
@@ -40,3 +41,9 @@ const rightButton= document.querySelector(".right");
 
 leftButton.addEventListener('click',prev_move);
 rightButton.addEventListener('click',next_move);
+
+setInterval(()=>{
+    const rightButton= document.querySelector(".right");
+    rightButton.click();
+}
+,3000);

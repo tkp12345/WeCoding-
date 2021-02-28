@@ -4,7 +4,6 @@
   height: 600px;
   position: relative;
   box-shadow: 0px 4px 10px #52525225;
-  
 }
 
 .master-left {
@@ -12,7 +11,6 @@
   height: 100%;
   float: left;
   position: relative;
-  
 }
 
 .master-right {
@@ -24,14 +22,15 @@
 }
 
 .master-main {
-  white-space : nowrap;
-  overflow : hidden;
-   position: absolute;
-   top:15%;
-   left:5%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 15%;
+  left:5%;
+  
 }
 
-.master-title{
+.master-title {
   width: 100%;
   font-size: 12px;
   line-height: 1.9;
@@ -39,7 +38,7 @@
   color: rgba(255, 255, 255, 0.877);
 }
 
-.master-sub{
+.master-sub {
   margin-bottom: 10px;
   width: 100%;
 }
@@ -54,13 +53,12 @@
   background-color: #244fad9f;
   color: rgba(255, 255, 255, 0.767);
   font-weight: 700;
-  
 }
-.master-icon{
-  color:rgba(255, 255, 255, 0.877);
+.master-icon {
+  color: rgba(255, 255, 255, 0.877);
 }
-.likeIcon{
-  color:rgb(255, 217, 0);
+.likeIcon {
+  color: rgb(255, 217, 0);
   margin-right: 10px;
 }
 
@@ -70,26 +68,23 @@
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
-   
 }
 
- 
 .master-introduce {
 }
 
 .mastr-arrow-container {
   display: flex;
   justify-content: center;
-  
 }
 
 .slide-up {
-  font-size: 2.0rem;
+  font-size: 2rem;
   cursor: pointer;
   color: rgb(255, 255, 255);
 }
 .slide-down {
-  font-size: 2.0rem;
+  font-size: 2rem;
   cursor: pointer;
   color: #cfd8dcdc;
 }
@@ -117,7 +112,7 @@
   padding: 1rem 0;
   margin-bottom: 0;
   overflow: visible;
-  
+
   /* transition: 1s;
   transform: translateY(200px); */
 }
@@ -141,81 +136,77 @@
   border-radius: 8px;
 }
 
-Tab{
+Tab {
   display: flex;
-  flex-direction:column
+  flex-direction: column;
 }
-.tabs{
-  display:flex;
-  margin-top: 10px; 
+.tabs {
+  display: flex;
+  margin-top: 10px;
 }
-.tab{
+.tab {
   transform: 2s;
   transition: 0.4s;
 }
-.tab:hover{
+.tab:hover {
   transform: translate(0, -3px);
 }
-.tap-content{
-  width:100%;
+.tap-content {
+  width: 100%;
   margin-top: 2px;
 }
 
-.tabs .tab{
+.tabs .tab {
   font-size: 1rem;
   text-align: center;
   line-height: 50px;
-  width:130px;
+  width: 130px;
   height: 60px;
-  cursor:pointer;
+  cursor: pointer;
   border-radius: 18px 18px 0px 0px;
   background-color: rgba(235, 235, 235, 0.925);
   border: 2px solid rgba(11, 148, 118, 0.74);
   font-weight: bold;
-  color:rgb(29, 29, 29)
   position: relative;
-  color:rgb(41, 40, 40)
+  color: rgb(41, 40, 40);
 }
 
-.items{
-  width:100%;
+.items {
+  width: 100%;
   display: none;
-  padding:10px;
-  background-color:rgba(235, 235, 235, 0.925);
+  padding: 10px;
+  background-color: rgba(235, 235, 235, 0.925);
   position: relative;
   border-radius: 0px 0px 20px 20px;
   border: 2px solid rgba(11, 148, 118, 0.74);
-  
-  
 }
 
-
-.items::before{
-  content:'';
+.items::before {
+  content: "";
   position: absolute;
-  top:0;
-  left:0px;
-  width:120px;
-  height:2px;
-  border:2px solid rgba(255, 255, 255, 0);
-  background-color:rgba(49, 243, 49, 0.616);
-}
-
-.items:nth-child(2)::before{
-  left:130px;
+  top: 0;
+  left: 0px;
+  width: 20%;
+  height: 2px;
+  border: 2px solid rgba(255, 255, 255, 0);
   background-color: rgba(49, 243, 49, 0.616);
 }
 
-.items:nth-child(3)::before{
-  left:260px;
-  background-color: rgba(49, 243, 49, 0.616);
-}
-.items:nth-child(4)::before{
-  left:390px;
+.items:nth-child(2)::before {
+  left: 130px;
   background-color: rgba(49, 243, 49, 0.616);
 }
 
-.items.active{
+.items:nth-child(3)::before {
+  left: 260px;
+  background-color: rgba(49, 243, 49, 0.616);
+}
+.items:nth-child(4)::before {
+  left: 390px;
+  background-color: rgba(49, 243, 49, 0.616);
+}
+
+.items.active {
   display: inline-block;
 }
 @media only screen and (max-width: 992px) {
@@ -223,12 +214,55 @@ Tab{
     display: none;
   }
   .master-left {
-    float:none;
-    left:20%;
+    float: none;
   }
+  .master-image {
+    width: 60vh;
+     
+  }
+  .master-main {
+    left:40%;
+    
+  }
+
 }
 @media only screen and (max-width: 480px) {
+  .head-icon{
+    display: none;
+  }
+  .master-container {
+    top:5%;
+    height: 500px;
+  }
   .master-right {
     display: none;
   }
+
+  .master-left {
+    float:none;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+  }
+  .master-main {
+    top: 15%;
+    left:8%;
+  }
+
+  .master-title {
+    width: 100%;
+    font-size: 0.6rem;
+   
+  }
+
+  .master-image {
+    width: 45vh;
+     
+  }
+  .master-subject {
+    font-size: 10px;
+  }
+
+   
 }

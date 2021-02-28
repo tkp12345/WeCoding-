@@ -2,10 +2,10 @@ function transformDown(event) {
   console.log("다운");
   const slideDown = event.target;
   /* <i class="fas fa-angle-up slide-down"></i>*/
-  const slideUp =slideDown.parentElement.children[0];
+  const slideUp = slideDown.parentElement.children[0];
 
   /*ul*/
-  const classList = slideDown.parentElement.previousElementSibling.children[0]
+  const classList = slideDown.parentElement.previousElementSibling.children[0];
   let activeLi = classList.getAttribute("data-position");
   /*li*/
   const liList = classList.getElementsByTagName("li");
@@ -35,7 +35,8 @@ function transformDown(event) {
 function transformUp(event) {
   console.log("업");
   const slideUp = event.target;
-  const slideDown =slideUp.parentElement.nextElementSibling.nextElementSibling.children[0];
+  const slideDown =
+    slideUp.parentElement.nextElementSibling.nextElementSibling.children[0];
 
   /*ul*/
   const classList = slideUp.parentElement.nextElementSibling.children[0];
@@ -64,37 +65,15 @@ function transformUp(event) {
   classList.setAttribute("data-position", activeLi);
 }
 
-
 const slideUpList = document.querySelector(".slide-up");
 
-  let classList =slideUpList.parentElement.nextElementSibling.children[0];
-  let liList = classList.getElementsByTagName("li");
+let classList = slideUpList.parentElement.nextElementSibling.children[0];
+let liList = classList.getElementsByTagName("li");
 
-  if(classList.clientHeight < (liList.length * 446 )){
-    slideUpList.classList.add("slide-up-hover");
-    slideUpList.addEventListener("click",transformUp);
-  }else{
-    const arrowContainer =slideUpList.parentElement;
-    arrowContainer.removeChild(slideUpList);
-
-  }
-
-
-
-
-
-/* --------------------------*/
-// const slideUpList = document.getElementsByClassName("slide-up")[0];
-// const slideDownList = document.getElementsByClassName("slide-down")[0];
-// const classList = document.getElementsByClassName("master-list")[0];
-// const liList = document.getElementsByTagName("li");
-
-// if(classList.clientHeight < liList.length * 446){
-//   slideUpList.classList.add("slide-up-hover");
-//   slideUpList.addEventListener("click", transformUp);
-// } else {
-//   const arrowContainerUp = slideUpList.parentElement;
-//   const arrowContainerDown = slideUpList.nextElementSibling.nextElementSibling;
-//   arrowContainerUp.removeChild(slideUpList);
-//   arrowContainerDown.removeChild(slideDownList);
-// }
+if (classList.clientHeight < liList.length * 446) {
+  slideUpList.classList.add("slide-up-hover");
+  slideUpList.addEventListener("click", transformUp);
+} else {
+  const arrowContainer = slideUpList.parentElement;
+  arrowContainer.removeChild(slideUpList);
+}
