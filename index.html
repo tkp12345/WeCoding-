@@ -40,9 +40,9 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#header").load("/html/header.html");
-            $("#footer").load("/html/footer.html");  
-            $("#sidebar").load("/html/sidebar.html"); 
+            $("#header").load("html/header.html"); 
+            $("#footer").load("html/footer.html"); 
+           
         });
   
     </script>
@@ -54,7 +54,35 @@
         <div id="header"></div>
     </header>
     <sidebar>
-        <div id="sidebar"></div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="html/404page.html">
+                        <span class="icon"><i class="fas fa-bullhorn"></i></span>
+                        <span class="title">공지사항</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="html/404page.html">
+                        <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span>
+                        <span class="title">마스터</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="html/404page.html">
+                        <span class="icon"><i class="fas fa-book"></i></span>
+                        <span class="title">강의목록</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="html/404page.html">
+                        <span class="icon"><i class="fas fa-chalkboard"></i></span>
+                        <span class="title">자유게시판</span>
+                    </a>
+                </li>
+        
+            </ul>
+        </div>
     </sidebar>
     <Carousel>
         <div class="slider">
