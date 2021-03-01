@@ -31,17 +31,18 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!--폰트-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"> -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/carousel.css" />
     <!--jquery [header, footer 분할]-->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#header").load("header.html"); 
-            $("#footer").load("footer.html"); 
+            $("#header").load("html/header.html"); 
+            $("#footer").load("html/footer.html"); 
+            $("#sidebar").load("html/sidebar.html"); 
         });
   
     </script>
@@ -53,35 +54,7 @@
         <div id="header"></div>
     </header>
     <sidebar>
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href=#>
-                        <span class="icon"><i class="fas fa-bullhorn"></i></span>
-                        <span class="title">공지사항</span>
-                    </a>
-                </li>
-                <li>
-                    <a href=#>
-                        <span class="icon"><i class="fas fa-chalkboard-teacher"></i></span>
-                        <span class="title">마스터</span>
-                    </a>
-                </li>
-                <li>
-                    <a href=#>
-                        <span class="icon"><i class="fas fa-book"></i></span>
-                        <span class="title">강의목록</span>
-                    </a>
-                </li>
-                <li>
-                    <a href=#>
-                        <span class="icon"><i class="fas fa-chalkboard"></i></span>
-                        <span class="title">자유게시판</span>
-                    </a>
-                </li>
-
-            </ul>
-        </div>
+        <div id="sidebar"></div>
     </sidebar>
     <Carousel>
         <div class="slider">
@@ -109,21 +82,21 @@
     <section>
         <div class="inner">
             <div class="tool-container">
-                <div class="tool" onclick="location.href='/html/master.html';">
+                <div class="tool" onclick="location.href='html/master.html';">
                     <i class="fas fa-server tool-icon beckend-style"></i>
                     <div class="tool-title">
                         <div class="tool-title--maintitle">백엔드</div>
                         <div class="tool-title--subtitle">모든회원</div>
                     </div>
                 </div>
-                <div class="tool" onclick="location.href='/html/master.html';">
+                <div class="tool" onclick="location.href='html/master.html';">
                     <i class="far fa-window-restore tool-icon frontend-style"></i>
                     <div class="tool-title">
                         <div class="tool-title--maintitle"> 프론트엔드</div>
                         <div class="tool-title--subtitle">모든회원</div>
                     </div>
                 </div>
-                <div class="tool" onclick="location.href='/html/master.html';">
+                <div class="tool" onclick="location.href='html/404page.html';">
                     <i class="fas fa-users-class tool-icon tool-style"></i>
                     <div class="tool-title">
                         <div class="tool-title--maintitle"> 화상강의</div>
@@ -254,7 +227,7 @@
                 </div>
 
                 <ul class="class-list" data-position="0">
-                    <li class="class-card">
+                    <li class="class-card" onclick="location.href='html/master.html';">
                         <img src="../img/master-main.png" alt="코딩스터디 플랫폼 위코잉" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
@@ -273,7 +246,7 @@
                         </div>
                     </li>
 
-                    <li class="class-card">
+                    <li class="class-card" onclick="location.href='html/master.html';">
                         <img src="../img/master-card2.png" alt="코딩스터디 플랫폼 위코잉" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
@@ -292,7 +265,7 @@
                         </div>
                     </li>
 
-                    <li class="class-card">
+                    <li class="class-card" onclick="location.href='html/master.html';">
                         <img src="../img/master-card3.png" alt="코딩스터디 플랫폼 위코잉" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
@@ -311,7 +284,7 @@
                         </div>
                     </li>
 
-                    <li class="class-card">
+                    <li class="class-card" onclick="location.href='html/master.html';">
                         <img src="../img/master-card4.png" alt="코딩스터디 플랫폼 위코잉" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
@@ -330,7 +303,7 @@
                         </div>
                     </li>
 
-                    <li class="class-card">
+                    <li class="class-card" onclick="location.href='html/master.html';">
                         <img src="../img/master-card5.png" alt="코딩스터디 플랫폼 위코잉" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
@@ -349,7 +322,7 @@
                         </div>
                     </li>
 
-                    <li class="class-card">
+                    <li class="class-card" onclick="location.href='html/master.html';">
                         <img src="../img/master-main.png" alt="코딩스터디 플랫폼 위코잉" class="class-image" />
                         <div class="class-container">
                             <div class="class-skill">
@@ -387,7 +360,7 @@
                 </div>
 
                 <ul class="class-list" data-position="0">
-                    <li class="class-card">
+                    <li class="class-card" onclick="location.href='html/master.html';">
                         <img src="../img/classCSS.png" alt="코딩스터디 플랫폼 위코잉" class="class-image" />
                         <div class="class-container">
                             <div class="class-desc">
@@ -398,7 +371,7 @@
                         </div>
                     </li>
 
-                    <li class="class-card">
+                    <li class="class-card" onclick="location.href='html/master.html';">
                         <img src="../img/classHTML5.png" alt="코딩스터디 플랫폼 위코잉" class="class-image" />
                         <div class="class-container">
                             <div class="class-desc">
@@ -409,7 +382,7 @@
                         </div>
                     </li>
 
-                    <li class="class-card">
+                    <li class="class-card" onclick="location.href='html/master.html';">
                         <img src="../img/classJS.png" alt="코딩스터디 플랫폼 위코잉" class="class-image" />
                         <div class="class-container">
                             <div class="class-desc">
@@ -428,6 +401,7 @@
     </footer>
     <a id="backtotop" class="show"></a>
     <script src="../js/main.js"></script>
+    <script src="../js/sidebar.js"></script>
     <script src="../js/carousel.js"></script>
 </body>
 
