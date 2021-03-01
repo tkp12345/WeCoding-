@@ -69,10 +69,10 @@
 }
 
 .carousel-second {
-  background-image: url("./img/wecoding_carousel1.png");
+  background-image: url("../img/wecoding_carousel1.png");
   /* object-fit: cover !important; */
 }
 
 .carousel-third {
-  background-image: url("./img/wecoding_carousel4.png");
+  background-image: url("../img/wecoding_carousel4.png");
 }
