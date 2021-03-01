@@ -162,34 +162,26 @@ sidebar {
 
 .toggle.active:before {
   content: "\f00d";
-
-  /* font-size: fa-2x; */
-}
-/*************/
-.carousel {
 }
 
 section {
   width: 100%;
   height: 100%;
   position: relative;
-  /* position: relative; */
 }
 
 .carousel-fist {
+  /*저작권 : www.northampton.ac.uk 에있습니다*/
   background-image: url("https://www.northampton.ac.uk/wp-content/uploads/2019/02/Code-Club-at-Northampton-International-Academy.jpg");
-
-  /* margin-top: 60px; */
-  /* border: solid 2px red; */
 }
 
 .carousel-second {
-  background-image: url("/img/wecoding_carousel1.png");
+  background-image: url("../img/wecoding_carousel1.png");
   /* object-fit: cover !important; */
 }
 
 .carousel-third {
-  background-image: url("/img/wecoding_carousel4.png");
+  background-image: url("../img/wecoding_carousel4.png");
 }
 
 .img {
