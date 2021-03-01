@@ -62,3 +62,17 @@
   top: 0;
   right: 0;
 }
+
+.carousel-fist {
+  /*저작권 : www.northampton.ac.uk 에있습니다*/
+  background-image: url("https://www.northampton.ac.uk/wp-content/uploads/2019/02/Code-Club-at-Northampton-International-Academy.jpg");
+}
+
+.carousel-second {
+  background-image: url("./img/wecoding_carousel1.png");
+  /* object-fit: cover !important; */
+}
+
+.carousel-third {
+  background-image: url("./img/wecoding_carousel4.png");
+}
