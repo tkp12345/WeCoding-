@@ -1,6 +1,6 @@
 
 
-# WECODING 
+# WECOING 
 
 ## __ 소개 __
 
