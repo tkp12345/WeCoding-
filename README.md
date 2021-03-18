@@ -6,7 +6,7 @@
 
 창업 경진 대회 경험을 모티브로 한웹 사이트 템플릿 및 기능제작 
  
-## url : https://tkp12345.github.io/WeCoding/
+## url : https://tkp12345.github.io/WeCoding-/
 
 ------------
 
